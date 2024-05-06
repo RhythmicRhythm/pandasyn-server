@@ -55,10 +55,10 @@ router.post("/", async (req, res) => {
       }
 
       // Update points for referring user and the referred user
-      referringUser.points += 1000;
+      referringUser.points += 100;
       referringUser.referral_count += 1;
       await referringUser.save();
-      user.points += 1000;
+      user.points += 100;
     }
 
     // user.points += 1000;
@@ -144,7 +144,7 @@ router.post("/claim-points/:userId", async (req, res) => {
     }
 
     // Add points to the user
-    user.points += 1000;
+    user.points += 100;
     user.last_claim_date = now;
     await user.save();
 
