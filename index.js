@@ -21,7 +21,7 @@ app.use(
       "http://localhost:5173",
       "*",
       "https://pandasynn.netlify.app",
-      "https://solcializeadmin.netlify.app",
+      "https://pandasynadmin.netlify.app",
     ],
     credentials: true,
   })
