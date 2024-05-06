@@ -19,8 +19,8 @@ app.use(
   cors({
     origin: [
       "http://localhost:5173",
-      "",
-      "https://runed.netlify.app",
+      "*",
+      "https://pandasynn.netlify.app",
       "https://solcializeadmin.netlify.app",
     ],
     credentials: true,
