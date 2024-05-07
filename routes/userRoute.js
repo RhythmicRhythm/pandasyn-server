@@ -23,6 +23,7 @@ router.post("/", async (req, res) => {
   const {
     twitter_username,
     twitter_screen_name,
+    wallet_address,
     twitter_photo,
     referral_code,
   } = req.body;
@@ -43,6 +44,7 @@ router.post("/", async (req, res) => {
     const user = await User.create({
       twitter_username,
       twitter_screen_name,
+      wallet_address,
       twitter_photo,
       referral_code: referralCode,
     });
