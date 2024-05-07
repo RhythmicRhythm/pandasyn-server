@@ -20,7 +20,7 @@ app.use(
     origin: [
       "http://localhost:5173",
       "*",
-      "https://pandasynn.netlify.app",
+      "https://pandasyn.com",
       "https://pandasynadmin.netlify.app",
     ],
     credentials: true,
