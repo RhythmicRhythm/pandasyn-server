@@ -244,7 +244,7 @@ router.patch("/:userId/completeTask/:taskId", async (req, res) => {
     }, 10 * 60 * 200); // 10 minutes delay
 
     res.send({
-      message: "Task verication in progress, check back in 10min.",
+      message: "Task verication in progress, check back in a few min.",
     });
   } catch (error) {
     console.error(error);
